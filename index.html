@@ -1,10 +1,339 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khatija Khot | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        line-height: 1.6;
+        background: #f8fafc;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 18px;
+        color: #1f2937;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    nav ul li a:hover {
+        color: #2563eb;
+    }
+
+    section {
+        padding: 90px 20px 60px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: #1e3a8a;
+    }
+
+    h2 {
+        color: #1e3a8a;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+        margin: 15px 0;
+        color: #4b5563;
+    }
+
+    .intro {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .btn {
+        display: inline-block;
+        margin: 20px 10px;
+        padding: 12px 25px;
+        background: #2563eb;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .skill {
+        background: white;
+        padding: 10px 15px;
+        border-radius: 30px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .contact {
+        text-align: center;
+    }
+
+    .socials a {
+        font-size: 2rem;
+        margin: 0 15px;
+        color: #2563eb;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        background: white;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+        }
+
+        nav ul li a {
+            padding: 12px;
+            font-size: 0.9rem;
+        }
+    }
+</style>
 </head>
+
 <body>
-    <h1>Welcome to my website!</h1>
-    <p>This site is hosted on GitHub Pages.</p>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Khatija Khot</h1>
+
+        <p class="subtitle">
+            BSc IT Student | Aspiring Professional
+        </p>
+
+        <p class="intro">
+            Motivated BSc IT student with strong analytical,
+            organizational, and problem-solving skills.
+            Experienced in using SQL, Excel, GitHub, and digital tools
+            through hands-on projects and continuous learning.
+            Seeking opportunities to contribute and grow in IT,
+            operations, business support, and data-related roles.
+        </p>
+
+        <a href="resume.pdf" class="btn" download>
+            Download Resume
+        </a>
+
+        <a href="#contact" class="btn">
+            Contact Me
+        </a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <div class="grid">
+        <div class="card">
+            Strong communication and organizational skills.
+        </div>
+
+        <div class="card">
+            Interest in technology and business processes.
+        </div>
+
+        <div class="card">
+            Ability to learn quickly and adapt to new tools.
+        </div>
+
+        <div class="card">
+            Experience working on practical learning projects.
+        </div>
+
+        <div class="card">
+            Passion for continuous improvement and professional growth.
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skills-list">
+
+        <div class="skill">SQL</div>
+        <div class="skill">Microsoft Excel</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">SQLite</div>
+        <div class="skill">DB Browser for SQLite</div>
+        <div class="skill">Database Management</div>
+        <div class="skill">Data Analysis</div>
+        <div class="skill">Communication Skills</div>
+        <div class="skill">Problem Solving</div>
+        <div class="skill">Team Collaboration</div>
+        <div class="skill">Time Management</div>
+        <div class="skill">Power BI (Learning)</div>
+
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Learning & Practice Projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Library Management System (SQL)</h3>
+
+            <p><strong>Learning & Practice Project</strong></p>
+
+            <p>
+                Designed and managed a database for books,
+                members, borrowing records, and returns.
+            </p>
+
+            <p>
+                Created tables, inserted data, and wrote SQL queries
+                for data retrieval and reporting.
+            </p>
+
+            <p>
+                Practiced database design, data management,
+                and query writing.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                SQL, SQLite, DB Browser for SQLite
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Personal Finance Dashboard (Excel)</h3>
+
+            <p><strong>Learning & Practice Project</strong></p>
+
+            <p>
+                Built an Excel dashboard to track income,
+                expenses, and savings.
+            </p>
+
+            <p>
+                Used Pivot Tables, charts, and formulas
+                to analyze financial data.
+            </p>
+
+            <p>
+                <strong>Technologies:</strong>
+                Microsoft Excel
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+
+    <h2>Contact</h2>
+
+    <p>Email: Khotkhatija1@gmail.com </p>
+
+    <div class="socials">
+<p>
+    <a href="https://linkedin.com/in/khatija-khot-70ba773b6" target="_blank">
+        LinkedIn Profile
+    </a>
+</p>
+        <a href="https://github.com/khatija-source" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Khatija Khot | Portfolio
+</footer>
+
 </body>
 </html>
